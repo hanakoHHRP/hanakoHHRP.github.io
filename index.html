@@ -220,13 +220,13 @@
             bottom: 20%;
             left: 50%;
             transform: translate(-50%, 50%);
-            width: 160px;
-            height: 160px;
+            width: 120px;   
+            height: 120px;  
             border-radius: 50%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border: 4px solid rgba(255, 255, 255, 0.5);
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 700;
             cursor: pointer;
             box-shadow: 
@@ -240,6 +240,42 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        /* 小屏幕设备 (手机竖屏) */
+        @media screen and (max-width: 480px) {
+            .hypnosis-btn {
+                width: 100px;
+                height: 100px;
+                font-size: 14px;
+            }
+        }
+
+        /* 中等屏幕设备 (手机横屏/小平板) */
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            .hypnosis-btn {
+                width: 120px;
+                height: 120px;
+                font-size: 16px;
+            }
+        }
+
+        /* 大屏幕设备 (平板/桌面) */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .hypnosis-btn {
+                width: 140px;
+                height: 140px;
+                font-size: 18px;
+            }
+        }
+
+        /* 超大屏幕设备 (大桌面) */
+        @media screen and (min-width: 1025px) {
+            .hypnosis-btn {
+                width: 160px;
+                height: 160px;
+                font-size: 20px;
+            }
         }
         
         .hypnosis-btn::before {
@@ -282,13 +318,13 @@
             bottom: 20%;
             right: 8%;
             transform: translateY(50%);
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border: 3px solid rgba(255, 255, 255, 0.4);
             color: white;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 700;
             cursor: pointer;
             box-shadow: 
@@ -304,6 +340,42 @@
             justify-content: center;
             opacity: 0;
             pointer-events: none;
+        }
+
+        /* 小屏幕设备 (手机竖屏) */
+        @media screen and (max-width: 480px) {
+            .climax-btn {
+                width: 70px;
+                height: 70px;
+                font-size: 11px;
+            }
+        }
+
+        /* 中等屏幕设备 (手机横屏/小平板) */
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            .climax-btn {
+                width: 80px;
+                height: 80px;
+                font-size: 12px;
+            }
+        }
+
+        /* 大屏幕设备 (平板/桌面) */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .climax-btn {
+                width: 90px;
+                height: 90px;
+                font-size: 13px;
+            }
+        }
+
+        /* 超大屏幕设备 (大桌面) */
+        @media screen and (min-width: 1025px) {
+            .climax-btn {
+                width: 100px;
+                height: 100px;
+                font-size: 14px;
+            }
         }
 
         /* 按钮显示状态（催眠激活时） */
